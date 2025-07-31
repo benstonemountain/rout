@@ -1,0 +1,16 @@
+<p>Innen akarok elnavigálni, amint kitöltöttem az inputot és elm is mentettem</p>
+
+<div class="usertext">
+    <label for="input">Írj ide valamit: </label>
+    <input type="text" id="input" [(ngModel)]="textByUser" (ngModelChange)="onInputChange()">
+</div>
+
+<div class="buttons">
+<button (click)="onSaveText()">Mentés</button>
+<button (click)="onNavigate()">Elnavigálás</button>
+</div>
+
+<!-- <app-popup   *ngIf="showPopup"
+  (decision)="onPopupResult($event)"></app-popup> -->
+
+
