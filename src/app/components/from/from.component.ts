@@ -16,6 +16,8 @@ export class FromComponent implements CanComponentDeactivate {
   //követem, hogy a user rányomott-e a Mentés gombra
   saved = false;
   canDeactivate(): boolean {
+    console.log("bejön a from component canDeactivate interface-be");
+    
     return this.textByUser.length > 0 && this.saved;
   }
 
@@ -29,7 +31,5 @@ export class FromComponent implements CanComponentDeactivate {
     this.saved = false;
   }
 
-  onNavigate() {
-    this.router.navigate(['/to']);
-  }
+ 
 }

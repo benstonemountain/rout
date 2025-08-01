@@ -11,6 +11,8 @@ export const canComponentDeactivateGuard: CanDeactivateFn<CanComponentDeactivate
   nextState
 ) => {
   if (!component.canDeactivate()) {
+    console.log("bejön a guardba");
+    
     return confirm('Nincs elmentve minden. Mégis tovább megy');
   }
   return true;
