@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CanComponentDeactivate } from '../../guard/route.guard';
+import { PopupComponent } from '../popup/popup.component';
 
 @Component({
   selector: 'app-from',
