@@ -5,7 +5,7 @@ export interface CanComponentDeactivate {
   canDeactivate(): boolean;
 }
 
-export const routeGuard: CanDeactivateFn<CanComponentDeactivate> = (
+export const canComponentDeactivateGuard: CanDeactivateFn<CanComponentDeactivate> = (
   component,
   currentRoute,
   currentState,
