@@ -18,7 +18,7 @@ export class FromComponent implements CanComponentDeactivate {
   //követem, hogy a user rányomott-e a Mentés gombra
   saved = false;
   canDeactivate(): boolean {
-    return this.textByUser.length === 0 || !this.saved;
+    return this.textByUser.length > 0 && this.saved;
   }
 
   onSaveText() {
