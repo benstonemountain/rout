@@ -1,9 +1,6 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Observable, of, Subject } from 'rxjs';
-import { PopupComponent } from '../popup/popup.component';
-import { NgIf } from '@angular/common';
 import { CanComponentDeactivate } from '../../guard/route.guard';
 
 @Component({
